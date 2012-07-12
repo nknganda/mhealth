@@ -1,0 +1,53 @@
+syntax: glob
+
+# Compiled Python modules
+
+*.pyo
+*.pyc
+
+# Emacs
+
+*~
+*\#
+
+# SQLite
+
+*.db
+*.s3db
+    
+# Aptana / Eclipse
+
+.project
+.pydevproject
+.settings
+
+# Per-dev files
+
+settings_local.py
+
+# Mercurial backup files
+
+*.orig
+*.rej
+
+# pip 
+
+build/*
+
+# Vim files
+*.swp
+*.swo
+*.vim
+*.fuse_hidden*
+# Local static files
+static/*
+
+# Uploaded media
+media/product_images/*
+
+# Media cache
+media/cache/*
+
+# Sublime files
+*.sublime-project
+*.sublime-workspace

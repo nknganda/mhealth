@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<template>
+    <do>
+    <a href="login.wml"> Login </a>
+    </do>
+    <do>
+    <a href="register.wml">
+        Register
+    </a>
+</do>
+    <p><?php echo $_SESSION['username']; ?></p>
+</template>
+<card id="home" title="Home">
+<p>
+<a href="bmi.wml">BMI</a>
+</p>
+
+<p>
+<a href="disease.wml">Disease Query</a>
+</p>
+
+<p>
+<a href="contact_doc.wml">Contact Doctor</a>
+</p>
+</card>
+</wml>

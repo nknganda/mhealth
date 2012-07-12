@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<card title="Login">
+ <p>
+ 	Username
+    <input type="text" name="username" emptyok="false"/>
+ </p>
+ <p>
+ 	Password
+    <input type="password" name="password" emptyok="false"/>
+ </p>
+ <do type="accept" label="Login"> 
+  	<go method="post" href="login.php">
+        <postfield name="username" value="$(username)" />
+        <postfield name="password" value="$(password)" />
+    </go>
+    </do> 
+  <p>
+  	<a href="register.wml">Register</a>
+  </p>
+</card>
+</wml>

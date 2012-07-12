@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<card id="bmi" title="BMI">
+ <p>
+ 	Weight
+    <input type="text" name="weight" emptyok="false"/>
+ </p>
+ <p>
+ 	Height
+    <input type="text" name="height" emptyok="false"/>
+ </p>
+ <anchor>
+  	<go method="get" href="bmi_results.php">
+        <postfield name="weight" value="$(weight)"/>
+        <postfield name="height" value="$(height)"/>
+    </go>
+    Calculate 
+  </anchor>
+  <p>
+  	<a href="home.wml">Back</a>
+  </p>
+</card>
+</wml>
